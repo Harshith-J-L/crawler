@@ -18,12 +18,25 @@ python version: 3.8
     
     Activate the virtual environment by running the following command
 
-        source myapp/bin/activate
+    For Linux or macOS users
+
+       source myapp/bin/activate
+
+    For Windows Users
+
+       myapp\Scripts\activate
 
 2) Install the dependencies using requirements.txt file
 
         pip install -r requirements.txt
 
 3) Run the application as follows
-    
-        uwsgi --ini uwsgi.ini
+
+   For Linux or macOs users
+
+       uwsgi --ini uwsgi.ini
+
+   For Windows users
+
+       set FLASK_APP=app.py
+       flask run
