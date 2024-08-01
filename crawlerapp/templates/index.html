@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Sitemap</title>
+    <script type="text/javascript">
+        function downloadSitemap() {
+            // Get the URL from the input field
+            var inputUrl = document.getElementById("urlInput").value;
+            
+            // Start file download
+            window.location.href = '/v1/crawl?url=' + encodeURIComponent(inputUrl);
+            
+            // Optionally, disable the button to prevent multiple clicks
+            document.getElementById("downloadButton").disabled = true;
+
+            document.getElementById("message").textContent = "Download started, please wait..";
+        }
+    </script>
+</head>
+<body>
+    <h1>Download Sitemap</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL" style="width: 300px;">
+    <button id="downloadButton" onclick="downloadSitemap()">Download Sitemap</button>
+    <p id="message"></p>
+</body>
+</html>
