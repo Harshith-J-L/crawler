@@ -4,13 +4,13 @@ Crawler is a Flask-based web application that crawls a given website and generat
 
 # Installation guide
 
-    Dependency: python 3.8
+Dependency: python 3.8
 
 1) Clone the repository
 
     Clone using https as follows
 
-        https://github.com/Harshith-J-L/crawler.git
+        git clone https://github.com/Harshith-J-L/crawler.git
 
 2) Setup a virtual environment(Optional)
 
@@ -47,12 +47,12 @@ Crawler is a Flask-based web application that crawls a given website and generat
 
 # How to use ?
 
-    After successful installation, the application will be running at http://localhost:5000.
+After successful installation, the application will be running at http://localhost:5000.
 
-    The user can either use an API or an interface to input the URL to start the crawling
+The user can either use an API or an interface to input the URL to start the crawling
 
-    Use API as follows
+The API is as follows
 
         http://localhost:5000/v1/crawl?url=https://www.example.com
     
-    To input through an interface, open any browser and enter http://localhost:5000
+To input through an interface, open any browser and enter http://localhost:5000
